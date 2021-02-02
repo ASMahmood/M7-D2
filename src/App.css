@@ -17,9 +17,7 @@ h3.logoTitle {
 .homepage {
   margin-top: 20vh;
 }
-.formCol {
-  z-index: 2;
-}
+
 .bg-colour-change {
   position: fixed;
   top: 70vh;
@@ -27,12 +25,14 @@ h3.logoTitle {
   right: 0;
   bottom: 0;
   background-color: #588fc750;
-  z-index: 1;
+  z-index: 2;
 }
 .globeIcon {
   position: fixed;
   top: 0;
+  right: 0;
   fill: #4a82b9;
+  z-index: 1;
 }
 input {
   border: rgba(0, 0, 0, 0.6) 1px solid;
@@ -54,4 +54,18 @@ input {
 .submitJob:active {
   background-color: #09223b !important;
   box-shadow: none !important;
+}
+.formCol,
+.listCol {
+  z-index: 3;
+}
+
+.blueNav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+.jobTitleCard {
+  font-size: 16px;
+  text-align: center;
 }

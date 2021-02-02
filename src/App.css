@@ -1,38 +1,57 @@
+body {
+  background-color: #f8f8f8 !important;
+}
 .App {
-  text-align: center;
+  top: 0;
+  bottom: 0;
+}
+.navbarIcon {
+  height: 60px;
+}
+h3.logoTitle {
+  font-size: 40px;
+  font-weight: 700;
+  margin-right: 60px;
+  color: #4a82b9;
+}
+.homepage {
+  margin-top: 20vh;
+}
+.formCol {
+  z-index: 2;
+}
+.bg-colour-change {
+  position: fixed;
+  top: 70vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #588fc750;
+  z-index: 1;
+}
+.globeIcon {
+  position: fixed;
+  top: 0;
+  fill: #4a82b9;
+}
+input {
+  border: rgba(0, 0, 0, 0.6) 1px solid;
+  border-radius: 2px;
+  height: 50px;
+  padding-bottom: 5px;
+}
+.submitJob {
+  border-radius: 100px;
+  background-color: #0a66c2;
+  font-size: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.submitJob:hover {
+  background-color: #004182;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.submitJob:focus,
+.submitJob:active {
+  background-color: #09223b !important;
+  box-shadow: none !important;
 }

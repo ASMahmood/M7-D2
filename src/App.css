@@ -3,7 +3,7 @@ body {
 }
 .App {
   top: 0;
-  bottom: 0;
+  bottom: 10vh;
 }
 .navbarIcon {
   height: 60px;
@@ -17,6 +17,11 @@ h3.logoTitle {
 .homepage {
   margin-top: 20vh;
 }
+.homepage2 {
+  margin-top: 20vh;
+
+  z-index: 0;
+}
 
 .bg-colour-change {
   position: fixed;
@@ -25,6 +30,15 @@ h3.logoTitle {
   right: 0;
   bottom: 0;
   background-color: #588fc750;
+  z-index: 2;
+}
+.bg-colour-change2 {
+  position: fixed;
+  top: 94vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #c6d7e8;
   z-index: 2;
 }
 .globeIcon {
@@ -64,8 +78,12 @@ input {
   position: fixed;
   top: 0;
   z-index: 10;
+  background-color: #f8f8f8;
 }
 .jobTitleCard {
   font-size: 16px;
   text-align: center;
+}
+.jobTitle {
+  color: #4a82b9;
 }
